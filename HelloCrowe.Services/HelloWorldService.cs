@@ -16,6 +16,6 @@ namespace HelloCrowe.Services
         /// <returns>
         /// Output string, either generic or personalized, based on input parameters
         /// </returns>
-        public string GetOutputString(string name = null) => name != null ? $"Hello {name}" : "Hello World";
+        public string GetHello(string name = null) => name != null ? $"Hello {name}" : "Hello World";
     }
 }

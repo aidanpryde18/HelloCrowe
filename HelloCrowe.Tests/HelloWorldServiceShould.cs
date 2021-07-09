@@ -13,7 +13,7 @@ namespace HelloCrowe.Tests
         {
             var expectedString = "Hello World";
 
-            var actualString = helloService.GetOutputString();
+            var actualString = helloService.GetHello();
 
             Assert.AreEqual(expectedString, actualString);
         }
@@ -24,7 +24,7 @@ namespace HelloCrowe.Tests
             var name = "Billy";
             var expectedString = $"Hello {name}";
 
-            var actualString = helloService.GetOutputString(name);
+            var actualString = helloService.GetHello(name);
 
             Assert.AreEqual(expectedString, actualString);
         }
